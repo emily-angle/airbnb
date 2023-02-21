@@ -6,6 +6,7 @@ export const ScrollViewWrapper = styled.div`
     overflow: hidden;
     .scroll-content {
       display: flex;
+      transition: transform 200ms ease;
     }
   }
 

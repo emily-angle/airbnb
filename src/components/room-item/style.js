@@ -4,6 +4,7 @@ export const RoomItemWrapper = styled.div`
   width: ${(props) => props.itemWidth};
   padding: 8px 8px 12px;
   box-sizing: border-box;
+  flex-shrink:0;
   .cover {
     width: 100%;
     padding: 66.6% 0 0;

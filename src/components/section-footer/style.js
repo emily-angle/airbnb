@@ -7,5 +7,6 @@ export const SectionFooterWrapper = styled.div`
     font-weight: 600;
     margin-right: 6px;
     font-size:17px;
+    cursor: pointer;
   }
 `;

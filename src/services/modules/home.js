@@ -12,3 +12,6 @@ export const getDiscount= () => {
 export const getHotrecommend=()=>{
   return request.get("/home/hotrecommenddest")
 }
+export const getPlus=()=>{
+  return request.get("/home/plus")
+}
