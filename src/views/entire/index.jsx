@@ -1,15 +1,23 @@
-import React, { memo } from 'react'
-import { EntireWrapper } from './style'
+import { fetchRoomListAction } from "@/store/modules/entire/createActions";
+import React, { memo, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import EntireFilter from "./c-cpns/entire-filter";
+import EntirePagination from "./c-cpns/entire-pagination";
+import EntireRooms from "./c-cpns/entire-rooms";
+import { EntireWrapper } from "./style";
 
 const Entire = memo(() => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchRoomListAction());
+  }, [dispatch]);
   return (
     <EntireWrapper>
-      <div className='filter'>filter</div>
-      <div className='roomlist'>room</div>
-      <div className='pagination'>pagination</div>
-
+      <EntireFilter />
+      <EntireRooms />
+      <EntirePagination />
     </EntireWrapper>
-  )
-})
+  );
+});
 
-export default Entire
+export default Entire;

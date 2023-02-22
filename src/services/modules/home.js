@@ -1,17 +1,17 @@
 import request from "..";
 
 export const getGoodPrice = () => {
-  return request.get("/home/goodprice");
+  return request.get({url:"/home/goodprice"});
 };
 export const getHighScore= () => {
-  return request.get("/home/highscore");
+  return request.get({url:"/home/highscore"});
 };
 export const getDiscount= () => {
-  return request.get("/home/discount");
+  return request.get({url:"/home/discount"});
 };
 export const getHotrecommend=()=>{
-  return request.get("/home/hotrecommenddest")
+  return request.get({url:"/home/hotrecommenddest"})
 }
 export const getPlus=()=>{
-  return request.get("/home/plus")
+  return request.get({url:"/home/plus"})
 }

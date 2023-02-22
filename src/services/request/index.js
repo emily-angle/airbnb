@@ -27,14 +27,14 @@ class Request{
     });
   }
   request(config){
-   return this.instance.request(config)
+   return this.instance.request({...config})
   }
 
   get(config){
-    return this.instance.get(config)
+    return this.instance({...config,method:'get'})
   }
   post(config){
-    return this.instance.post(config)
+    return this.instance.post({...config,method:'post'})
   }
 
 }
