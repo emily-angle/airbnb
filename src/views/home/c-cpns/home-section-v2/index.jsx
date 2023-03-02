@@ -27,11 +27,13 @@ const HomeSectionV2 = memo((props) => {
         roomList={infoData.dest_list?.[name]?.slice(0, 6)}
         width={"33.3333%"}
       />
-      <SectionFooter desc={name}/>
+      <SectionFooter desc={name} />
     </HomeSectionV2Wrapper>
   );
 });
 
-HomeSectionV2.propTypes = {};
+HomeSectionV2.propTypes = {
+  infoData: PropTypes.object,
+};
 
 export default HomeSectionV2;

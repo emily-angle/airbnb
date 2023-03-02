@@ -8,6 +8,8 @@ import "@/assets/css/normalize.css";
 import "@/assets/css/reset.less";
 import "@/assets/css/common.less";
 
+
+
 import store from "@/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

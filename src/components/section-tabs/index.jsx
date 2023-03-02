@@ -16,7 +16,7 @@ const SectionTabs = memo((props) => {
           <div
             key={item.name}
             className={classNames("item", {
-              active: activeIndex == index,
+              active: activeIndex === index,
             })}
             onClick={(e) => {
               handleTabClick(item.name);
